@@ -41,7 +41,7 @@ public class CheckController {
         return "[\n" +
                 "    {\n" +
                 "        \"sum\": 3191,\n" +
-                "        \"name\": \"oleg\",\n" +
+                "        \"name\": \"vanya bl9t'....\",\n" +
                 "        \"quantity\": 2,\n" +
                 "        \"price\": 52764\n" +
                 "    },\n" +
