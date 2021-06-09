@@ -40,16 +40,34 @@ public class CheckController {
         CheckModel checkModel = new CheckModel();
         return "[\n" +
                 "    {\n" +
-                "        \"sum\": 3191,\n" +
-                "        \"name\": \"Vanya\",\n" +
+                "        \"sum\": 300,\n" +
+                "        \"name\": \"Пиво\",\n" +
                 "        \"quantity\": 2,\n" +
-                "        \"price\": 52764\n" +
+                "        \"price\": 150\n" +
                 "    },\n" +
                 "    {\n" +
-                "        \"sum\": 4531,\n" +
-                "        \"name\": \"Oleg\",\n" +
+                "        \"sum\": 300,\n" +
+                "        \"name\": \"Водка\",\n" +
                 "        \"quantity\": 1,\n" +
-                "        \"price\": 45445\n" +
+                "        \"price\": 300\n" +
+                "    }\n" +
+                "    {\n" +
+                "        \"sum\": 520,\n" +
+                "        \"name\": \"Вино\",\n" +
+                "        \"quantity\": 2,\n" +
+                "        \"price\": 260\n" +
+                "    }\n" +
+                "    {\n" +
+                "        \"sum\": 72,\n" +
+                "        \"name\": \"Кириешки\",\n" +
+                "        \"quantity\": 3,\n" +
+                "        \"price\": 24\n" +
+                "    }\n" +
+                "    {\n" +
+                "        \"sum\": 241,\n" +
+                "        \"name\": \"Сыр КИПР. рос.\",\n" +
+                "        \"quantity\": 1,\n" +
+                "        \"price\": 241\n" +
                 "    }\n" +
                 "]";
     }
