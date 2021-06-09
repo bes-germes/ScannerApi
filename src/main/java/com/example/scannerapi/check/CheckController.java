@@ -41,13 +41,13 @@ public class CheckController {
         return "[\n" +
                 "    {\n" +
                 "        \"sum\": 3191,\n" +
-                "        \"name\": \"vanya bl9t'....\",\n" +
+                "        \"name\": \"Vanya\",\n" +
                 "        \"quantity\": 2,\n" +
                 "        \"price\": 52764\n" +
                 "    },\n" +
                 "    {\n" +
                 "        \"sum\": 4531,\n" +
-                "        \"name\": \"xer\",\n" +
+                "        \"name\": \"Oleg\",\n" +
                 "        \"quantity\": 1,\n" +
                 "        \"price\": 45445\n" +
                 "    }\n" +
