@@ -4,6 +4,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -26,7 +27,11 @@ public class CheckController {
     @GetMapping()
     public String getCheck() {
 
-//        WebDriver driver = new ChromeDriver();
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--disable-gpu");
+        options.addArguments("--no-sandbox");
+        options.setBinary("C:\\bin\\chromedriver.exe");
+        ChromeDriver driver = new ChromeDriver(options);
 //        driver.get("");
 //        char[] information = info.toCharArray();
 //
@@ -47,7 +52,7 @@ public class CheckController {
 //            tmp.add(c);
 //        }
 
-        WebDriver driver = new ChromeDriver();
+//        WebDriver driver = new ChromeDriver();
         JavascriptExecutor executor = (JavascriptExecutor)driver;
         driver.get("https://proverkacheka.com/");
 
@@ -119,8 +124,8 @@ public class CheckController {
         } catch (UnsupportedFlavorException | IOException e) {
             e.printStackTrace();
         }
-//
-//        CheckModel checkModel = new CheckModel();
+
+        CheckModel checkModel = new CheckModel();
         return jsonString;
 //          return"[\n" +
 //                "    {\n" +
