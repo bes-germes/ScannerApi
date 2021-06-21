@@ -61,7 +61,7 @@ public class CheckController {
         options.addArguments("--no-sandbox");
         options.setBinary("GOOGLE_CHROME_BIN");
 
-        WebDriver driver = new ChromeDriver(options);
+        WebDriver driver = new ChromeDriver();
         System.out.println(driver.getPageSource());
         JavascriptExecutor executor = (JavascriptExecutor)driver;
         driver.get("https://proverkacheka.com/");
