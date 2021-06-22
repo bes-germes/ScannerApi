@@ -45,7 +45,12 @@ public class CheckController {
         String beforeT = elementsArray[0].substring(0, elementsArray[0].lastIndexOf("T"));
         String afterT = elementsArray[0].substring(elementsArray[0].lastIndexOf("T") + 1);
 
-        WebDriver driver = new ChromeDriver();
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--disable-gpu");
+        options.addArguments("--no-sandbox");
+        options.setBinary("CHROMEDRIVER_PATH");
+
+        WebDriver driver = new ChromeDriver(options);
         JavascriptExecutor executor = (JavascriptExecutor) driver;
         driver.get("https://proverkacheka.com/");
 
@@ -114,7 +119,8 @@ public class CheckController {
 
         try {
             String result = clipboard.getData(DataFlavor.stringFlavor).toString();
-            return result.substring(result.lastIndexOf("["), result.lastIndexOf("]") + 1);
+            String r = result.substring(result.lastIndexOf("["), result.lastIndexOf("]") + 1);
+            return r;
         } catch (UnsupportedFlavorException | IOException e) {
             e.printStackTrace();
         }
