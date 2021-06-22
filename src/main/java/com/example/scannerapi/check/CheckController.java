@@ -45,12 +45,12 @@ public class CheckController {
         String beforeT = elementsArray[0].substring(0, elementsArray[0].lastIndexOf("T"));
         String afterT = elementsArray[0].substring(elementsArray[0].lastIndexOf("T") + 1);
 
-//        ChromeOptions options = new ChromeOptions();
-//        options.addArguments("--disable-gpu");
-//        options.addArguments("--no-sandbox");
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--disable-gpu");
+        options.addArguments("--no-sandbox");
 //        options.setBinary("CHROMEDRIVER_PATH");
 
-        WebDriver driver = new ChromeDriver();
+        WebDriver driver = new ChromeDriver(options);
         JavascriptExecutor executor = (JavascriptExecutor) driver;
         driver.get("https://proverkacheka.com/");
 
